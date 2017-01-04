@@ -1,0 +1,7 @@
+.idea
+.eggs
+.cache
+*.egg-info
+*/__pycache__
+virenv
+tests/data/*
