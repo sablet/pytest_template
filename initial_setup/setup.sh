@@ -5,7 +5,9 @@ cd ..
 mv $ori_name $1
 cd $1
 virtualenv -p /usr/bin/python3 virenv_for_$1
-cat setup.py|sed "s/$ori_name/$1/g" > setup.py
+cp setup.py setup_temp.py
+sed "s/$ori_name/$1/g" setup_temp.py > setup.py
+rm setup_temp.py
 
 # data get
 
