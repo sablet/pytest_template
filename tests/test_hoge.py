@@ -1,17 +1,17 @@
-from src.hoge import hoge
+from src.hoge import hoge, MyApp
 import pytest
 
+"""
 @pytest.fixture()
 def setup():
-    # constructer ...
-    pass
+    return MyApp()
+"""
+
+
+def test_answer():
+    ans = MyApp()
+    assert ans.i == "i"
 
 
 def test_hoge():
-    ret = hoge()
-    assert ret == "hogehoge"
-
-
-def teardown():
-    # test data modify...
-    pass
+    assert hoge() == "hogehoge"
