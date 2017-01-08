@@ -3,5 +3,10 @@
 .cache
 *.egg-info
 */__pycache__
+*.png
 virenv
 tests/data/*
+doxygen-theme
+latex
+html
+
